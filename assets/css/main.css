@@ -1,0 +1,118 @@
+/*primera pantalla desde aqui*/
+.dropdown-toggle{
+  border:none;
+  background-color: transparent;
+}
+.dropdown-toggle:hover{
+  border:none;
+  background-color: transparent;  
+}
+.dropdown-toggle:active{
+  border:none;
+  background-color: transparent;
+}
+#start{
+  background-image: url(../../assets/img/background.jpg);
+  background-size: cover;
+}
+.btn-register{
+  margin-top: 35%;
+  margin-left: 10%;
+  border:none;
+  background-color: transparent; 
+  padding: 6%;
+}
+.btn-register:hover{
+  border:none;
+  background-color: transparent;  
+}
+.btn-register:active{
+  border:none;
+  background-color: transparent;
+  
+}
+.input-user{
+  padding-right: 40%;
+  margin-bottom: 4%;
+  padding-bottom: 2%;  
+  background-color: transparent;
+  border:1px solid black;
+  opacity: 80%;
+  border:1px solid white;
+  margin-left: 4%;
+}
+.input-password{
+  padding-right: 40%;
+  margin-bottom: 4%;
+  padding-bottom: 2%; 
+  background-color: transparent;
+  border:1px solid black;
+  opacity: 50%;
+  border:1px solid white;
+  margin-left: 4%;
+}
+.btn-login{
+  margin-top: 3%;
+  border:1px solid white;
+  background-color: transparent; 
+  color: white;
+  padding-right: 30%;
+  padding-left: 30%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+.btn-login:hover{
+  margin-top: 3%;
+  border:1px solid white;
+  background-color: transparent; 
+  color: grey;
+  padding-right: 30%;
+  padding-left: 30%;
+}
+.separation, .info, .login-facebook{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+/*segunda pantalla desde aqui*/
+img{
+  width: 100%;
+}
+.box-img{
+  border: 1.5px solid#2E64FE;
+  background-color: white;
+  margin-bottom:1%;
+}
+.box-img2{
+  border: 1.5px solid#2E64FE;
+  padding: 30px;
+  background-color: white;
+  margin-bottom:1%;
+}
+#collage{
+  background-color: #1C1C1C;
+  margin: 0;
+}
+.btn-logout{
+  border: none;
+  color:white;
+  background-color: transparent;
+}
+.btn-logout:hover{
+  border: none;
+  color:white;
+  background-color: transparent;
+}.btn-logout:active{
+  border: none;
+  color:white;
+  background-color: transparent;
+}
+.photo-retro{
+  color:#2E64FE;
+  padding: 4%
+}
+.btn-group-2{
+  color: #2E64FE;
+  background-color: transparent;
+  border: none;
+  margin-top: 4%;
+}

@@ -1,0 +1,224 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <!--s1 pantalla inicio bnt desplegable de idiomas/titulo/login/btn login/btn registro -->
+    <section id="start">
+      <div class="container"><!-- inicio div container -->
+        <div class="row"><!-- inicio row -->
+          <div class="col-xs-12 col-md-12"><!-- inicio cols -->
+            <div class="dropdown"><!-- inicio div dropdown -->
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                idiomas: español
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">ingles</a></li>
+                <li><a href="#">japones</a></li>
+                <li><a href="#">frances</a></li>
+                <li><a href="#">chino</a></li>
+              </ul>
+            </div><!-- fin div dropdown -->
+          </div><!-- fin cols-->
+        </div><!-- fin row -->
+        <div class="row"><!-- inicio row -->
+          <div class="col-xs-12 col-sm-12"><!-- inicio cols -->
+            <img src="assets/img/h1.png" alt=""><!-- titulo -->
+          </div><!-- fin cols -->
+        </div><!-- fin row -->
+        <div class="row"><!-- inicio row -->
+          <div class="col-xs-12 col-sm-12"><!-- inicio cols -->
+            <input type="text" maxlength="20" class="input-user">
+          </div><!-- fin cols -->
+        </div><!-- fin row -->
+        <div class="row"><!-- inicio row -->
+          <div class="col-xs-12 col-sm-12"><!-- inicio cols -->
+            <input type="password" pattern=".{6,}" maxlength="6" class="input-password">
+          </div><!-- fin cols -->
+        </div><!-- fin row -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <button type="button" class="btn btn-default btn-login">Iniciar sesión</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 info">
+            <a href="#">¿Has olvida tu información de inicio de sesión? <strong>Obten ayuda</strong></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <p class="separation text-center">__________ o __________</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 text-center login-facebook">
+            <a href="#" class=" "><i class="fab fa-facebook-square"></i> <strong>Inicia sesión con facebook</strong></a>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-xs-12 col-sm-12">
+            <button type="button" class="btn btn-default btn-register ">¿No tienes cuenta? Regístrate</button>
+          </div>
+        </div>
+      </div><!-- fin div container -->
+    </section>
+
+    <!--s2 pantalla collage -->
+    <section id="collage">
+      <div class="container"><!--inicio container -->
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-default btn-logout"><i class="fas fa-sign-out-alt"></i></button>
+          </div>
+        </div>
+        <div class="row"><!-- inicio row 1-->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 1-->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 1 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+        </div><!-- fin row 1-->
+        <div class="row"><!-- inicio row 1-->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 1-->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 1 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+        </div><!-- fin row 1-->
+        <div class="row"><!-- inicio row 1-->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 1-->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 1 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+          <div class="col-xs-3 col-sm-3 box-img2" ondragover="permitirDrop(event)" ondrop="drop(event)"><!-- inicio col 2 -->
+            <!-- img a arrastrar -->
+          </div><!-- fin col 2 -->
+        </div><!-- fin row 1-->
+
+        <!--division -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 photo-retro text-center">
+            <p><i class="fas fa-camera-retro"></i> PHOTO-BOOTH</p>
+          </div>
+        </div>
+
+        <!--segundo contenedor de imagenes que son las que arrastrare -->
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-lg box-img">
+            <img src="assets/img/1.png" alt="" draggable="true" ondragstart="drag(event)" id="img1">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/2.png" alt="" draggable="true" ondragstart="drag(event)" id="img2">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/3.png" alt="" draggable="true" ondragstart="drag(event)" id="img3">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/4.png" alt="" draggable="true" ondragstart="drag(event)" id="img4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/5.png" alt="" draggable="true" ondragstart="drag(event)" id="img5">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/6.png" alt="" draggable="true" ondragstart="drag(event)" id="img6">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/7.png" alt="" draggable="true" ondragstart="drag(event)" id="img7">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/15.png" alt="" draggable="true" ondragstart="drag(event)" id="img8">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/16.png" alt="" draggable="true" ondragstart="drag(event)" id="img9">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/14.png" alt="" draggable="true" ondragstart="drag(event)" id="img10">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/8.png" alt="" draggable="true" ondragstart="drag(event)" id="img11">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/9.png" alt="" draggable="true" ondragstart="drag(event)" id="img12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/10.png" alt="" draggable="true" ondragstart="drag(event)" id="img13">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/11.png" alt="" draggable="true" ondragstart="drag(event)" id="img14">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/12.png" alt="" draggable="true" ondragstart="drag(event)" id="img15">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/13.png" alt="" draggable="true" ondragstart="drag(event)" id="img16">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/10.png" alt="" draggable="true" ondragstart="drag(event)" id="img17">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/11.png" alt="" draggable="true" ondragstart="drag(event)" id="img18">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/12.png" alt="" draggable="true" ondragstart="drag(event)" id="img19">
+          </div>
+          <div class="col-xs-3 col-sm-3 box-img">
+            <img src="assets/img/13.png" alt="" draggable="true" ondragstart="drag(event)" id="img20">
+          </div>
+        </div>
+        
+        <!--botones del final -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="btn-group " role="group" aria-label="...">
+              <button type="button" class="btn btn-default btn-group-2">Camera Roll <i class="fas fa-angle-down"></i></button>
+              <button type="button" class="btn btn-default btn-group-2">Faces</button>
+              <button type="button" class="btn btn-default btn-group-2">Recents</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!--fin container -->
+    </section>
+
+    <!--scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="assets/js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+  </body>
+  </html>
