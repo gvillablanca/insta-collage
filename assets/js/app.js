@@ -14,8 +14,8 @@ function drop(ev) {
 }
 
 //funciones en modo responsivo
-//$("#collage").hide();
-$("#start").hide();
+$("#collage").hide();
+//$("#start").hide();
 
 // validar que campos no esten vacios
 $(".btn-login").click(function(){
